@@ -113,7 +113,7 @@ footer{
     position: fixed;
     right: -360px;
     height: 100%;
-    width: 350px;
+    max-width: 350px;
     background: white;
     z-index: 1000;
     -webkit-transition: right 400ms cubic-bezier(0.7,0,0.3,1);
@@ -151,7 +151,7 @@ footer{
     height: 40px;
     width: calc(100% - 40px);
     font-size: 14px;
-    padding:0 20px 0 30px;
+    padding:10px 20px 10px 30px;
     line-height: 40px
 }
 .hlist{
