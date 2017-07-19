@@ -208,7 +208,8 @@ a:hover{
     cursor: pointer;
     height: calc( 100% - 50px );
     overflow: auto;
-    overflow-x: hidden
+    overflow-x: hidden;
+    
 }
 
 .up{
@@ -259,6 +260,13 @@ a:hover{
     #logo{
         margin-left: 20px;
     }
+    .scrollpane {
+    
+    overflow-x: hidden;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+}
+
    
 }
 
