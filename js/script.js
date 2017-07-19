@@ -25,28 +25,24 @@ $(window).resize(function() {
  
 
 $("#menuButton").click(function() {
-  $("#dim").addClass('open');
-  $("#list").addClass('open');
+    $("#dim").addClass('open');
+    $("#list").addClass('open');
+    $('body').addClass('stop');
 });
 
 $("#dim").click(function(){
     $("#dim").removeClass('open');
-  $("#list").removeClass('open');
+    $("#list").removeClass('open');
+    $('body').removeClass('stop');
 });
 
 $(".fa-times").click(function(){
     $("#dim").removeClass('open');
-  $("#list").removeClass('open');
+    $("#list").removeClass('open');
+    $('body').removeClass('stop');
 });
 
-$('.scrollpane').on( 'mousewheel DOMMouseScroll', function (e) { 
-  
-  var e0 = e.originalEvent;
-  var delta = e0.wheelDelta || -e0.detail;
 
-  this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-  e.preventDefault();  
-});
 
 
 
