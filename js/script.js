@@ -55,7 +55,7 @@ $('.scrollpane').on( 'mousewheel DOMMouseScroll', function (e) {
 var lastScrollTop = 0;
 $(window).scroll(function(event){
    var st = $(this).scrollTop();
-   if (st > lastScrollTop){
+   if (st > lastScrollTop && $(this).scrollTop()>150){
        $('header').addClass("up");
    } else {
      $('header').removeClass("up");
