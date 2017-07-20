@@ -255,6 +255,21 @@ a:hover{
     display: block;
     opacity: 1;
 }
+.sub_head{
+    background: #22b8f0;
+    color: white;
+    font-weight: 500;
+    padding: 150px 30px 30px 50px;
+}
+.sub_head h2{
+    font-family: Open Sans, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+.sub_head span{
+    color:white;
+    font-size: 14px;
+}
 
 @media screen and (max-width: 830px) {
     header a[id^="a_"]{

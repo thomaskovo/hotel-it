@@ -45,9 +45,6 @@ $(".fa-times").click(function(){
 
 
 
-
-
-
 var lastScrollTop = 0;
 $(window).scroll(function(event){
    var st = $(this).scrollTop();
