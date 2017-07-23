@@ -27,32 +27,69 @@ $(window).resize(function() {
 $("#menuButton").click(function() {
     $("#dim").addClass('open');
     $("#list").addClass('open');
-    $('body').addClass('stop');
+    scrollDisable();
 });
 
 $("#dim").click(function(){
     $("#dim").removeClass('open');
     $("#list").removeClass('open');
     $('body').removeClass('stop');
+    scrollEnable();
 });
 
 $(".fa-times").click(function(){
     $("#dim").removeClass('open');
     $("#list").removeClass('open');
     $('body').removeClass('stop');
+    scrollEnable();
 });
 
 
 
 
 var lastScrollTop = 0;
+var header = $('header');
+
 $(window).scroll(function(event){
    var st = $(this).scrollTop();
    if (st > lastScrollTop && $(this).scrollTop()>150){
-       $('header').addClass("up");
+       if(!header.hasClass('up'))
+       header.addClass("up");
+       
    } else {
-     $('header').removeClass("up");
+       if(st!=lastScrollTop)
+           if(header.hasClass('up'))
+            header.removeClass("up");
    }
    lastScrollTop = st;
 });
 
+var $body = $('body'),
+    scrollDisabled = false,
+    scrollTop;
+
+function scrollDisable() {
+    if (scrollDisabled) {
+        return;
+    }
+
+    scrollTop = $(window).scrollTop();
+
+    $body.addClass('stop')
+        .css({
+        top: -1 * scrollTop
+    });
+
+    scrollDisabled = true;
+}
+
+function scrollEnable() {
+    if (!scrollDisabled) {
+        return;
+    }
+
+    $body.removeClass('stop');
+    $(window).scrollTop(scrollTop);
+
+    scrollDisabled = false;
+}
