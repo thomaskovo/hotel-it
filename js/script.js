@@ -22,7 +22,21 @@ $(window).resize(function() {
     headerAdjust();
 
 });
- 
+ var open = 0;
+$(".lang").click(function() {
+    if(open){
+    $(".lang_drop").removeClass('open');
+        open=0;
+        console.log('close');
+    }
+    else{
+    $(".lang_drop").addClass('open');  
+        open=1;
+        console.log('open');
+    }
+    
+});
+
 
 $("#menuButton").click(function() {
     $("#dim").addClass('open');
