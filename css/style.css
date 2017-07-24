@@ -191,7 +191,7 @@ footer{
     backface-visibility: hidden; transform: translateZ(0);
     -webkit-backface-visibility:hidden; -webkit-transform: translateZ(0);
 }
-.sublist_item {
+a.sublist_item {
     display: block;
     line-height: 1.7;
     width: calc(100% - 40px);
@@ -386,6 +386,13 @@ a:hover{
     header a[id^="a_"]{
        display:none!important;
     }
+    header{
+        height: 80px;
+    }
+    .sub_head {
+    
+    padding: 100px 30px 30px 30px;
+}
     section h2 {
     font-size: 24px;
     }
