@@ -134,21 +134,22 @@ footer{
     top:0;
     height: 100%;
     width: 100%;
-    background: rgba(0,0,0,0);
+    opacity: 0;
+    background: rgba(0,0,0,0.5);
     z-index: 999;
     pointer-events: none;
-    -webkit-transition:  background 400ms cubic-bezier(0.7,0,0.3,1);
-    transition:  background 400ms cubic-bezier(0.7,0,0.3,1);
+    -webkit-transition:  opacity 400ms linear;
+    transition:  opacity 400ms linear;
 }
 #dim.open{
-    background: rgba(0,0,0,0.5);
+    opacity: 1;
     pointer-events: all;
 }
 
 #list {
     position: fixed;
     top:0;
-    transition: transform 0.6s ease;
+    transition: transform 0.6s ease-in-out;
     right: -360px;
     height: 100%;
     max-width: 350px;
@@ -434,8 +435,20 @@ a:hover{
     #logo{
         margin-left: 20px;
     }
+    #photo{
+        padding-top: 80px;
+    }
+    #photo h1{
+        font-size: 50px;
+    }
+    #photo p{
+        font-size: 16px;
+    }
     #list{
         max-width: 100%;
+    }
+    .center{
+        padding: 100px 0;
     }
     .up{
     top:0px;
