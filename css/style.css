@@ -52,9 +52,34 @@ header #main_bar a{
     vertical-align: middle;
 }
 
-section:last-of-type{
-    height: 1000px;
-   
+
+.plain{
+    padding: 50px;
+    font-weight: 300;
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.5;
+}
+section div{
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px;
+    max-width: 1100px;
+}
+section:nth-child(2n+1){
+    background: #f5f5f5;
+}
+section h2{
+    font-size: 36px;
+    line-height: 36px;
+    color: #333333;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+section p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
 }
 #photo{
     background: #222;
@@ -348,12 +373,54 @@ a:hover{
     border-right:solid rgba(255,255,255,0.3);
     height: 100%;
 }
+#sync{
+    height: 200px;
+    padding-top: 30px;
+}
 
 
 
 @media screen and (max-width: 830px) {
     header a[id^="a_"]{
        display:none!important;
+    }
+    section h2 {
+    font-size: 24px;
+    }
+    section div,.plain{
+        padding:30px;
+    }
+    .head{
+        padding-bottom: 100px;
+    }
+    .head p:first-child {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 30px 30px 0 30px;
+    }
+    .head p {
+    padding: 20px 30px 30px 30px;
+    width: calc(100% - 60px);
+    font-size: 15px;
+    font-weight: 400;
+    }
+    .head span {
+    position: absolute;
+    margin: auto;
+    height: 80px;
+    width: 200px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 20px 0;
+    top: inherit;
+    }
+    .head span div{
+    width: 100px;
+    }
+    .head span img{
+        height: 80px;
+       
     }
     .dropdown{
         display:none!important;
@@ -363,6 +430,12 @@ a:hover{
     }
     #list{
         max-width: 100%;
+    }
+    .up{
+    top:0px;
+    }
+    #top_bar{
+        display: none;
     }
     
    
