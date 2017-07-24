@@ -26,21 +26,19 @@ $(window).resize(function() {
 
 $("#menuButton").click(function() {
     $("#dim").addClass('open');
-    $("#list").addClass('open');
+    $("#list").css("transform","translate(-360px,0)");
     scrollDisable();
 });
 
 $("#dim").click(function(){
     $("#dim").removeClass('open');
-    $("#list").removeClass('open');
-    $('body').removeClass('stop');
+    $("#list").css("transform","translate(0,0)");
     scrollEnable();
 });
 
 $(".fa-times").click(function(){
     $("#dim").removeClass('open');
-    $("#list").removeClass('open');
-    $('body').removeClass('stop');
+    $("#list").css("transform","translate(0,0)");
     scrollEnable();
 });
 
