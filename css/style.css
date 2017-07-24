@@ -2,6 +2,25 @@
 body{
     font-family: Open Sans, sans-serif;
 }
+.flag{
+    float:left;
+    height: 100%;
+    width: 50px;
+}
+.sk{
+    background-image: url(../rsc/sk.svg);
+    margin-left: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.en{
+    background-image: url(../rsc/uk.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.lang{
+    display:none;
+}
 .stop{ position: fixed; overflow-y:scroll }
 header{
     top:0;
@@ -186,8 +205,7 @@ footer{
     font-size: 18px;
     padding:0 20px ;
     line-height: 50px;
-    backface-visibility: hidden; transform: translateZ(0);
-    -webkit-backface-visibility:hidden; -webkit-transform: translateZ(0);
+    
 }
 a.sublist_item {
     display: block;
@@ -195,8 +213,7 @@ a.sublist_item {
     width: calc(100% - 40px);
     font-size: 14px;
     padding:10px 20px 10px 30px;
-    backface-visibility: hidden; transform: translateZ(0);
-    -webkit-backface-visibility:hidden; -webkit-transform: translateZ(0);
+    
 }
 .sublist_item:hover{
     background: #22b8f0;
@@ -248,8 +265,7 @@ a:hover{
     height: calc( 100% - 50px );
     overflow: auto;
     overflow-x: hidden;
-    backface-visibility: hidden; transform: translateZ(0);
-    -webkit-backface-visibility:hidden; -webkit-transform: translateZ(0);
+    
     
 }
 
@@ -428,6 +444,30 @@ a:hover{
     .head span img{
         height: 80px;
        
+    }
+    .lang{
+        background: url(../rsc/sk.svg);
+        display:block;
+    height: 80px;
+    position: fixed;
+    right: 60px;
+    width: 60px;
+    background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+}
+    .lang_drop{
+        position:absolute;
+        top:60px;
+        opacity: 0;
+        height: 80px;
+        background: white;
+        right: 0;
+        width:150px;
+    }
+    .lang_drop:hover{
+        opacity: 1;
+        top:80px;
     }
     .dropdown{
         display:none!important;

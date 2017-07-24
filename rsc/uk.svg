@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 80 109.8" style="enable-background:new 0 0 80 109.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#8BB7F0;}
+	.st1{fill:#4E7AB5;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#A3B7CC;}
+	.st4{fill:#F78F8F;}
+	.st5{fill:#C74343;}
+</style>
+<g>
+	<rect x="0.5" y="26.4" class="st0" width="79" height="55"/>
+	<path class="st1" d="M79,26.9v54H1v-54H79 M80,25.9H0v56h80V25.9L80,25.9z"/>
+</g>
+<polygon class="st2" points="0,33.5 37.3,58.4 42.6,49.2 7.8,25.9 0,25.9 "/>
+<polygon class="st2" points="80,25.9 73.9,25.9 39.1,49.2 44.4,58.4 80,34.6 "/>
+<polygon class="st2" points="44.4,48 39.1,57.2 76.1,81.9 80,81.9 80,71.8 "/>
+<polygon class="st2" points="0,72.9 0,81.9 6,81.9 42.6,57.2 37.3,48 "/>
+<rect x="1" y="47.9" class="st2" width="78" height="12"/>
+<rect x="34" y="26.9" class="st2" width="12" height="54"/>
+<rect x="34" y="25.9" class="st3" width="12" height="1"/>
+<rect x="34" y="80.9" class="st3" width="12" height="1"/>
+<rect x="79" y="47.9" class="st3" width="1" height="12"/>
+<rect y="47.9" class="st3" width="1" height="12"/>
+<g>
+	<polygon class="st4" points="36.5,81.4 36.5,57.4 0.5,57.4 0.5,50.4 36.5,50.4 36.5,26.4 43.5,26.4 43.5,50.4 79.5,50.4 79.5,57.4 
+		43.5,57.4 43.5,81.4 	"/>
+	<path class="st5" d="M43,26.9v23v1h1h35v6H44h-1v1v23h-6v-23v-1h-1H1v-6h35h1v-1v-23H43 M44,25.9h-8v24H0v8h36v24h8v-24h36v-8H44
+		V25.9L44,25.9z"/>
+</g>
+<polygon class="st5" points="80,25.9 78,25.9 46,47.9 50.9,47.9 80,27.9 "/>
+<polygon class="st5" points="34,59.9 29.1,59.9 0,79.9 0,81.9 2,81.9 "/>
+<polygon class="st3" points="1,26.9 9.3,26.9 7.8,25.9 0,25.9 0,33.5 1,34.2 "/>
+<polygon class="st3" points="1,80.9 1,72.2 0,72.9 0,81.9 6,81.9 7.5,80.9 "/>
+<polygon class="st5" points="0,27.9 0,31.2 25,47.9 30,47.9 "/>
+<polygon class="st3" points="73.9,25.9 72.4,26.9 78.9,26.9 78.9,35.3 80,34.6 80,25.9 "/>
+<polygon class="st3" points="79,71.1 79,80.9 74.6,80.9 76.1,81.9 80,81.9 80,71.8 "/>
+<polygon class="st5" points="80,74.4 59.2,59.9 54,59.9 80,77.9 "/>
+</svg>
