@@ -4,7 +4,7 @@ body{
 }
 .flag{
     float:left;
-    height: 40px;
+    height: 100%;
     width: 50px;
 }
 .sk{
@@ -462,22 +462,19 @@ a:hover{
     .lang_drop{
         position:absolute;
         top:60px;
+<<<<<<< HEAD
         display: block;
+=======
+>>>>>>> parent of 123a739... harpunka test part2
         opacity: 0;
-        padding:20px;
-        height: 40px;
+        height: 80px;
         background: white;
         right: 0;
         width:150px;
-        -webkit-transition: all 400ms;
-    transition: all 400ms;
-        line-height: 40px;
     }
-    .lang_drop.open{
-        
+    .lang_drop:hover{
         opacity: 1;
         top:80px;
-        
     }
     .dropdown{
         display:none!important;
