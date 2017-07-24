@@ -382,11 +382,7 @@ a:hover{
 
 
 @media screen and (max-width: 830px) {
-    a.sublist_item {
-    color: red;
     
-    width: calc(100% - 40px);
-    }
     header a[id^="a_"]{
        display:none!important;
     }
