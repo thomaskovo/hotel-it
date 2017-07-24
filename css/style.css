@@ -392,6 +392,9 @@ a:hover{
     height: 200px;
     padding-top: 30px;
 }
+.lang_drop{
+    display: none;
+}
 
 
 
@@ -459,7 +462,7 @@ a:hover{
     .lang_drop{
         position:absolute;
         top:60px;
-        
+        display: block;
         opacity: 0;
         padding:20px;
         height: 40px;
