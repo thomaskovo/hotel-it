@@ -17,7 +17,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
-.lang{
+.lang,.lang_drop{
     display:none;
 }
 .stop{ position: fixed; overflow-y:scroll }
@@ -401,7 +401,9 @@ a:hover{
 
 
 @media screen and (max-width: 830px) {
-    
+    .sk{
+        margin-left: 0;        
+    }
     header a[id^="a_"]{
        display:none!important;
     }
@@ -450,7 +452,7 @@ a:hover{
         height: 80px;
        
     }
-    .lang{
+    html[lang="sk"] .lang{
         background: url(../rsc/sk.svg);
         display:block;
     height: 80px;
@@ -461,7 +463,20 @@ a:hover{
         background-repeat: no-repeat;
         background-position: center;
 }
+    html[lang="en"] .lang{
+        background: url(../rsc/uk.svg);
+         display:block;
+    height: 80px;
+    position: fixed;
+    right: 60px;
+    width: 60px;
+    background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
     .lang_drop{
+        display: block;
+        pointer-events: none;
         position:absolute;
         top:60px;
         z-index: 1002;
@@ -476,7 +491,7 @@ a:hover{
         line-height: 40px;
     }
     .lang_drop.open{
-        
+        pointer-events: all;
         opacity: 1;
         top:80px;
         

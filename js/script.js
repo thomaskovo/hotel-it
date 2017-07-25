@@ -28,13 +28,11 @@ $(".lang").click(function() {
     $(".lang_drop").removeClass('open');
         open=0;
         $("#dim").removeClass('openTop');
-        console.log('close');
     }
     else{
     $(".lang_drop").addClass('open');  
         open=1;
         $("#dim").addClass('openTop');
-        console.log('open');
     }
     
 });
@@ -60,7 +58,12 @@ $(".fa-times").click(function(){
     scrollEnable();
 });
 
-
+function sk(){
+    window.location.href = "../";
+}
+function en(){
+    window.location.href = "en";
+}
 
 
 var lastScrollTop = 0;
