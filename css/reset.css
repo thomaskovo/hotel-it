@@ -24,7 +24,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    width: 100%;
+	line-height: 1.5;
 }
 ol, ul {
 	list-style: none;

@@ -7,7 +7,9 @@
     
     
     <!-- STYLES -->
-    <link  href="https://fonts.googleapis.com/css?family=Open+Sans:300,800" rel="stylesheet">
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800');
+</style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <link rel="stylesheet"  type="text/css" href="../css/reset.css">
@@ -51,8 +53,8 @@
     <header >
         <div id="top_bar">
             
-            <div class="sk flag"></div>
-            <div class="en flag"></div>
+            <div onclick="sk()" class="sk flag"></div>
+            <div onclick="en('stay')" class="en flag"></div>
             <div id="phone">
                 <a href="callto:00421 904 555 555">
                     <i class="fa fa-phone" aria-hidden="true"></i> +421 904 555 555
@@ -72,7 +74,7 @@
             </div>
             <ul id="links">
                 <li class="dropdown" >
-                    <a id="a_home" href="#home">Domov</a>
+                    <a id="a_home" href="#home">Home</a>
                     <div class="dropdown-content">
                         <a>About us</a>
                         <a>Contact</a>

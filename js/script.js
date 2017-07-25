@@ -60,20 +60,29 @@ $(".fa-times").click(function(){
 
 
 
+var domain = "file:///C:/Users/tomas/Documents/GitHub/hotel-it";
+var url = window.location.href ;
+
+
 
 
 
 function sk(x){
-    if(x==null)
-        window.location.href = "../";
-    else
-        window.location.href = "../"+x;
+    if(x==null){
+        
+        url = url.replace('/en/','/');
+        window.location.href = url;
+    }
+    else if(x=='stay'){}
+   
 }
 function en(x){
-    if(x==null)
-        window.location.href = "en";
-    else
-        window.location.href = "en"+x;
+    if(x==null){
+        var a = url;
+    window.location.href = [a.slice(0, domain.length), '/en', a.slice(domain.length)].join('');
+    }
+    else if(x=='stay'){}
+    
 }
 
 
