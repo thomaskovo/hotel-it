@@ -461,7 +461,7 @@ a:hover{
     width: 60px;
     background-size: 30px;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: 50% 55%;
 }
     html[lang="en"] .lang{
         background: url(../rsc/uk.svg);
@@ -472,7 +472,7 @@ a:hover{
     width: 60px;
     background-size: 30px;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: 50% 55%;
     }
     .lang_drop{
         display: block;

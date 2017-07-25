@@ -62,6 +62,21 @@ $(".fa-times").click(function(){
 
 
 
+
+function sk(x){
+    if(x==null)
+        window.location.href = "../";
+    else
+        window.location.href = "../"+x;
+}
+function en(x){
+    if(x==null)
+        window.location.href = "en";
+    else
+        window.location.href = "en"+x;
+}
+
+
 var lastScrollTop = 0;
 var header = $('header');
 
