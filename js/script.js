@@ -58,6 +58,14 @@ $(".fa-times").click(function(){
     scrollEnable();
 });
 
+
+
+
+var a = document.createElement('a');
+
+    a.href = window.location.href;
+    console.log(a.pathname);
+
 function sk(){
     window.location.href = "../";
 }
