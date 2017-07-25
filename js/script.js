@@ -64,13 +64,15 @@ $(".fa-times").click(function(){
 var a = document.createElement('a');
 
     a.href = window.location.href;
-    console.log(a.pathname);
+
+var str = a.pathname.replace("/hotel-it/", "../");
+    console.log(str);
 
 function sk(){
-    window.location.href = "../";
+    window.location.href = str;
 }
 function en(){
-    window.location.href = "en";
+    window.location.href = str;
 }
 
 
